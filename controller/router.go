@@ -17,6 +17,7 @@ func SetupRouter() *mux.Router {
 		fmt.Fprint(w, `{"status":"ok","message":"API server is running"}`)
 	}).Methods("GET", "OPTIONS")
 	r.HandleFunc("/evaluate", HandleEvaluate).Methods("POST", "OPTIONS")
+	r.HandleFunc("/github/readme", HandleGitHubReadme).Methods("POST", "OPTIONS")
 	return r
 }
 func corsMiddleware(next http.Handler) http.Handler {
