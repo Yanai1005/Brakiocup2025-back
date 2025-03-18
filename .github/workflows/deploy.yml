@@ -37,9 +37,10 @@ jobs:
 
       - name: Deploy to Cloud Run
         run: |
-          TAG=$(echo $GITHUB_SHA | head -c7)
-          gcloud run deploy web-push-demo \
+         TAG=$(echo $GITHUB_SHA | head -c7)
+         gcloud run deploy web-push-demo \
             --image ${IMAGE_NAME}:${TAG} \
             --platform managed \
             --region ${GCP_REGION} \
-            --allow-unauthenticated
+            --allow-unauthenticated \
+            --set-env-vars=GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
