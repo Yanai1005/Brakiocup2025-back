@@ -18,6 +18,7 @@ func SetupRouter() *mux.Router {
 	}).Methods("GET", "OPTIONS")
 	r.HandleFunc("/evaluate", HandleEvaluate).Methods("POST", "OPTIONS")
 	r.HandleFunc("/github/readme", HandleGitHubReadme).Methods("POST", "OPTIONS")
+	r.HandleFunc("/github/advice", HandleReadmeAdvice).Methods("POST", "OPTIONS")
 	return r
 }
 func corsMiddleware(next http.Handler) http.Handler {
