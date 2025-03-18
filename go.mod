@@ -1,6 +1,8 @@
 module github.com/Brakiocup2025-back
 
-go 1.23.1
+go 1.23.0
+
+toolchain go1.23.1
 
 require (
 	github.com/google/generative-ai-go v0.19.0
