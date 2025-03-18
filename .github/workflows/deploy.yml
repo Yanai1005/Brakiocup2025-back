@@ -6,9 +6,9 @@ on:
       - main
 
 env:
-  GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID}}
-  GCP_REGION: ${{ vars.GCP_REGION }}
-  IMAGE_NAME: ${{ secrets.IMAGE_NAME }}
+  GCP_PROJECT_ID: gen-lang-client-0182116528
+  GCP_REGION: asia-northeast1
+  IMAGE_NAME: gcr.io/gen-lang-client-0182116528/brakiocup2025-back-backend:latest
 
 jobs:
   deploy:
