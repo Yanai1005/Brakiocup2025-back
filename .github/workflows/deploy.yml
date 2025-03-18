@@ -8,7 +8,7 @@ on:
 env:
   GCP_PROJECT_ID: gen-lang-client-0182116528
   GCP_REGION: asia-northeast1
-  IMAGE_NAME: gcr.io/gen-lang-client-0182116528/brakiocup2025-back-backend:latest
+  IMAGE_NAME: gcr.io/gen-lang-client-0182116528/brakiocup2025-back-backend
 
 jobs:
   deploy:
