@@ -43,4 +43,4 @@ jobs:
             --platform managed \
             --region ${GCP_REGION} \
             --allow-unauthenticated \
-            --set-env-vars=GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
+            --set-env-vars=GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }},GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
