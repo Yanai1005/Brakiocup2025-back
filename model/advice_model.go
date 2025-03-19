@@ -38,6 +38,7 @@ func GenerateReadmeAdvice(content string, scores EvaluationResponse) (string, er
 
 ## 改善アドバイス
 (各評価カテゴリに対する具体的なアドバイスを箇条書きで記載)
+(各評価カテゴリに対する点数は含めないでください)
 
 ## 改善されたREADMEの例
 (元のREADMEを改善した例を記載)
